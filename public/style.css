@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* geral */
+body {
+    font-family: JetBrains Mono;
+    background-color: white;  /* Fundo branco para todo o site */
+    color: #333;  /* Cor do texto em cinza escuro */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* cabeçalho */
+header {
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: #f9f9f9;  /* Cabeçalho com fundo claro */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: #333;
+    transition: background 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #f0f0f0; /* Cor suave ao passar o mouse */
+}
+
+/* título */
+h1 {
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    color: #333;
+}
+
+/* container principal */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 400px;
+    /* background-color: red; */
+    gap: 20px;
+
+}
+
+.secao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(202, 202, 202);
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 280px;
+    height: 140px;
+}
+
+.titleMetodo{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.buttonSecao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 40px;
+    /* background-color: black; */
+    border: 2px solid rgb(202, 202, 202);
+    color: rgb(75, 75, 75);
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: -10px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.buttonSecao:hover{
+    border: 2px solid rgba(202, 202, 202, 0);
+        background-color: rgb(61, 61, 61);
+        color: white;
+}
+
+/* formulário de entrada */
+form {
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    background-color: white;  /* Fundo branco */
+    border: 1px solid #ddd;  /* Borda cinza clara */
+    width: 100%;
+    max-width: 400px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-family: JetBrains Mono;
+}
+
+input[type="button"] {
+    border: none;
+    width: 190px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 15px;
+    background-color: #2c2c2c;  /* Cor verde */
+    color: white;
+    font-family: JetBrains Mono;
+}
+
+input[type="button"]:hover {
+    background-color: #0f0f0f;
+}
+
+/* tabela */
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: center;
+    background-color: white;  /* Fundo branco da tabela */
+    border: 1px solid #ddd;  /* Borda cinza clara */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;  /* Borda cinza clara */
+    text-align: center;
+    transition: .3s;
+}
+
+tr:hover td {
+    background-color: #f9f9f9;  /* Fundo suave ao passar o mouse */
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;  /* Linhas alternadas em cinza claro */
+}
+
+/* footer */
+footer {
+    margin-top: 25px;
+    border-top: 1px solid #ddd;  /* Borda cinza clara no rodapé */
+    padding: 20px 0;
+    background-color: #f9f9f9;  /* Fundo suave */
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+    }
+}

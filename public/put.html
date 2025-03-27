@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Put</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/post.html">Post</a>
+            <a href="/put.html">Put</a>
+            <a href="/get.html">Get</a>
+            <a href="/delete.html">Delete</a>
+        </nav>
+    </header>
+    
+
+    <div class="container">
+        <form>
+            <h3>PUT</h3>
+            <p>Atualize os seus dados aqui.</p>
+            <br>
+            <label>ID:</label>
+            <input type="text" id="id" readonly><br>
+            <label>Nome:</label>
+            <input type="text" id="nomeAtualizar">
+            <br>
+            <label>Idade:</label>
+            <input type="text" id="idadeAtualizar">
+            <br>
+            <label>CPF:</label>
+            <input type="text" id="cpfAtualizar" placeholder="Digite o CPF para busca">
+            <br><br>
+            <input type="button" onclick="buscarDados()" value="Buscar">
+            <input type="button" onclick="atualizarDados()" value="Atualizar">
+        </form>
+    
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
